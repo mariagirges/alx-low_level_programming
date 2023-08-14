@@ -7,7 +7,6 @@
 /**
  * main - main function
  * enter any numbr 
- * i will tell you is positive or negative or zero
  * Return: 0
  */
 int main(void)
