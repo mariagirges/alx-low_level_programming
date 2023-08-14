@@ -5,9 +5,9 @@
 
 /* betty style doc for function main goes there */
 /**
- * main - main function
- * No Description: 
- * Return: 0
+ * main-main function
+ * NoDescription: 
+ * Return:0
  */
 int main(void)
 {
