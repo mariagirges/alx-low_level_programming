@@ -9,10 +9,10 @@
 
 void print_numbers(void)
 {
-int number = 48;
-for (number = 48; number < 58; number++)
+int n;
+for (n = 0; n < 10; n++)
 {
-_putchar(number);
+_putchar(n);
 }
-_putchar(10);
+_putchar("\n");
 }
