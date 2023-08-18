@@ -1,28 +1,12 @@
-#include "main.h"
+#iniclude "main.h"
 /**
-* main - check the code
-*
-* Return: Always 0.
-*/
-int main(void)
-{
-/**
- * main - Entry point
- * Return:0
+ * print_alphabet - prints alphabet
  */
- 
 void print_alphabet(void)
 {
-char c = 'a';
+	char c;
 
-while (c <= 'z')
-{
-_putchar(c);
-c++;
-
-}
-_putchar('\n');
-
-}
-return (0);
+	for (c = 'a'; c <= 'z'; c++)
+		_putchar(c);
+	_putchar('\n');
 }
