@@ -4,8 +4,7 @@
 
 /* betty style doc for function main goes there */
 /**
- * main - mainfunction
- * NoDescription: 
+ * main - is program will assign a random number to the variable n;
  * Return:0
  */
 int main(void)
@@ -17,15 +16,15 @@ int main(void)
 
 	if (n > 0)
 	{
-		printf("%s"," is positive");
+		printf("%s", "is positive");
 	}
 	else if (n == 0)
 	{
-		printf("%s","is zero");
+		printf("%s", "is zero");
 	}
 	else
 	{
-		printf("%s","is negative");
+		printf("%s", "is negative");
 	}
 	return (0);
 }
