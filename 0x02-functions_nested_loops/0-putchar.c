@@ -7,12 +7,12 @@
  */
 int main(void)
 {
-	char str[18] = "_putchar";
+	char str[] = "_putchar";
+	int ch;
 
-	for (int i = 0; i <= 9; i++)
+	for (ch = 0; ch < 8; ++ch)
 	{
-		putchar(str[i]);
+		_putchar(str[ch]);
+		_putchar('\n');
 	}
-	putchar('\n');
 	return (0);
-}
