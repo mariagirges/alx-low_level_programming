@@ -15,6 +15,6 @@ while (n < 10)
 		putchar(c);
 	}
 	putchar('\n');
-	i++;
+	n++;
 }
 }
