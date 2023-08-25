@@ -13,3 +13,8 @@ void print_line(int n)
 	}
 	putchar('\n');
 }
+int main(void)
+{
+	void print_line(int n);
+	return (0);
+}
