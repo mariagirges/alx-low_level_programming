@@ -6,19 +6,12 @@
  */
 void print_chessboard(char (*a)[8])
 {
-	int x, y;
+	int i, n;
 
-	for (x = 0; x < 8; x++)
+	for (i = 0; i < 8; i++)
 	{
-		for (y = 0; y < 8; y++)
-		{
-			if (y == 7)
-			{
-				_putchar(a[x][y]);
-				_putchar('\n');
-			}
-			else
-				_putchar(a[x][y]);
-		}
+		for (n = 0; n < 8; n++)
+			_putchar(a[i][n]);
+		_putchar('\n');
 	}
 }
