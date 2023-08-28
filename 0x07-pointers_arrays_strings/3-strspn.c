@@ -6,25 +6,23 @@
  * Return: the number of bytes in the initial segment of @s which consist only
  * of bytes from @accept
  */
-unsigned int _strspn(char *s, char *accept){
-	unsigned int x, m;
-
-	int value = 0;
+unsigned int _strspn(char *s, char *accept)
+{
+	int x, y;
+	int z = 0;
 
 	for (x = 0; s[x] != '\0'; x++)
 	{
-		int check = 0;
-
-		for (n = 0; accept[m] != '\0'; m++)
+		if (s[x] != 32)
 		{
-			if (accept[m] == s[x])
+			for (y = 0; accept[y] != '\0'; y++)
 			{
-				value++;
-				check = 1;
+				if (s[x] == accept[y])
+					z++;
 			}
 		}
-		if (check == 0)
-			return (value);
+		else
+			return (z);
 	}
-	return (value);
+	return (z);
 }
