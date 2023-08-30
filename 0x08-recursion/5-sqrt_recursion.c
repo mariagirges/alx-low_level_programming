@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <math.h>
 /**
  * sqrt - search the square root of value
  * @x: first value
