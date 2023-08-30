@@ -4,7 +4,8 @@
  * @s: string to print
  * Return: void
  */
-void _puts_recursion(char *s){
+void _puts_recursion(char *s)
+{
 	if (*s == '\0')
 	{
 		putchar('\n');
