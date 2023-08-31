@@ -1,39 +1,29 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * check - check the prime number
- * @n1: the first number
- * @n2: the second number
- * Return: prime number
+ *prime - return power of any number
+ *@x: original number
+ *@y: counter that compare multiplication
+ *Return: square root
  */
-int check(int n1, int n2)
+int prime(int x, int y)
 {
-	if(n2 < 2 || n2 % n1 == 0)
-		return (0);
-	else if (n1 > n2 / 2)
+	if (x == y)
 		return (1);
-	else 
-		return (check(n1 + 1, n2))
+	else if (x % y == 0)
+		return (0);
+	return (prime(x, y + 1));
+	}
 }
 /**
- * is_prime_number - returns 1 if the input integer is a prime number .
- * @n: input integer
- * Return: 1 if the input integer is a prime number, otherwise return 0.
+ * is_prime_number -  returns 1 if the input integer is a prime number
+ * @n: test number
+ * Return: 1 or 0
  */
 int is_prime_number(int n)
 {
-	int div;
-
-	div = 2;
-
-	if (n <= 3)
-	{
+	if (prime(n, 1) == 2)
 		return (1);
-	}
-	else 
-	{
+	else
 		return (0);
-	}
-	return (is_divisible(n, div));
 }
-
