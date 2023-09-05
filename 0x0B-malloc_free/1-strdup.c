@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * *_strdup - returns a pointer to a new string 
+ * *_strdup - returns a pointer to a new string
  * which is a duplicate of the string @str
- * @str: string to duplicate 
+ * @str: string to duplicate
  * Return: pointer or NULL
  */
 char *_strdup(char *str)
@@ -19,7 +19,7 @@ char *_strdup(char *str)
 		return (NULL);
 
 	while (str[size])
-			size++;
+		size++;
 	ptr = malloc((size + 1) * sizeof(char));
 	if (ptr == NULL)
 	{
@@ -29,7 +29,3 @@ char *_strdup(char *str)
 		i++;
 	return (ptr);
 }
-
-
-
-	
