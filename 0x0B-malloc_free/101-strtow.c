@@ -9,14 +9,14 @@
 char **strtow(char *str)
 {
 	char **ptr;
-int i, n = 0, temp = 0, length = 0, w = num_words(str);
+int i, n = 0, temp = 0, length = 0, word = num_words(str);
 
-if (w == 0)
+if (word == 0)
 return (NULL);
-ptr = (char **) malloc(sizeof(char *) * (w + 1));
+ptr = (char **) malloc(sizeof(char *) * (word + 1));
 if (ptr != NULL)
 {
-for (i = 0; i <= len(str) && w; i++)
+for (i = 0; i <= mblen(str) && word; i++)
 {
 if ((str[i] != ' ') && (str[i] != '\0'))
 length++;
