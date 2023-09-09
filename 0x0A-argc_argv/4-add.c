@@ -2,9 +2,10 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * _atoi - convert string to integer
- * @s: string
- * Return: int converted from string
+ * main - adds positive numbers.
+ * @argc: arguments
+ * @argv: array
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
