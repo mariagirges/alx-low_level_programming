@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "3-calc.h"
 /**
  * get_op_func - finds the correct function
@@ -21,11 +19,13 @@ int (*get_op_func(char *s))(int, int)
 
 	i = 0;
 
-	while (ops[i].op)
+	while (i < 5)
 	{
-		if (strcmp(ops[i].op, s) == 0)
+		if (!strcmp(ops[i].op, s))
+		{
 			return (ops[i].f);
-	    i++;
+		}
+		i++;
 	}
 
 	return (NULL);
