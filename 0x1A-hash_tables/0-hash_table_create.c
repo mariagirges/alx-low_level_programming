@@ -18,7 +18,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (hsh->array == NULL)
 		return (NULL);
 	for (i = 0; i < size; i++)
-		hsh>array[i] = NULL;
+		ht>array[i] = NULL;
 
 	return (hsh);
 }
